@@ -1,0 +1,154 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* Background Image Styles */
+#main-bg-image {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+#curve-bg-image {
+  position: absolute;
+  top: 84%;
+}
+
+#quotes-bg-image {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+/* Main Styles */
+.wrapper {
+  display: flex;
+  max-width: 620px;
+  position: absolute;
+  top: 40%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+
+#quote {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.name {
+  display: flex;
+}
+
+#author {
+  font-weight: 800;
+}
+
+#jobs {
+  color: hsl(240, 18%, 77%);
+  margin-left: 10px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+#author-image {
+  position: absolute;
+  left: 161%;
+  top: 66%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-bar {
+  display: flex;
+  background: #fff;
+  position: absolute;
+  top: 165%;
+  left: 130%;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#prev {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#prev:hover {
+  transform: scale(1.2);
+}
+#next {
+  cursor: pointer;
+}
+
+#next:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    max-width: 1020px;
+  }
+  #main-bg-image {
+    position: absolute;
+    left: 50%;
+    top: 26%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+  }
+
+  #curve-bg-image {
+    position: absolute;
+    top: 87%;
+    width: 400px;
+  }
+
+  #quotes-bg-image {
+    position: absolute;
+    top: 51%;
+    left: 45%;
+    width: 70px;
+  }
+  .wrapper {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #quote {
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+    width: 400px;
+  }
+  .name {
+    flex-direction: column;
+    text-align: center;
+  }
+  #author-image {
+    position: absolute;
+    left: 50%;
+    top: -103%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+  }
+  .slider-bar {
+    left: 50%;
+    top: -42%;
+    padding: 15px 15px;
+    transform: translate(-50%, -50%);
+  }
+}
